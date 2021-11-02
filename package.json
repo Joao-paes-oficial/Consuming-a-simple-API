@@ -1,0 +1,26 @@
+{
+  "name": "consuming-a-simple-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-paes-oficial/Consuming-a-simple-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joao-paes-oficial/Consuming-a-simple-API/issues"
+  },
+  "homepage": "https://github.com/Joao-paes-oficial/Consuming-a-simple-API#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
