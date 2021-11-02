@@ -3,7 +3,10 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    return res.json({ message: 'Ok' })
+    return res.json([
+        {name: 'João'},
+        {name: 'Tobi'}
+    ])
 })
 
 app.listen('3000', (req, res) => {
