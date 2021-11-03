@@ -1,0 +1,14 @@
+<body></body>
+<script>
+    async function getContent() {
+        try {
+            const promise = await fetch('http://localhost:4567/')
+            const data = await promise.json()
+            console.log(data)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    getContent()
+</script>

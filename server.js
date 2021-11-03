@@ -1,6 +1,8 @@
+const cors = require('cors')
 const express = require('express')
-
 const app = express()
+
+app.use(cors())
 
 app.get('/', (req, res) => {
     return res.json([
@@ -9,6 +11,6 @@ app.get('/', (req, res) => {
     ])
 })
 
-app.listen('3000', (req, res) => {
-    console.log('Server is running on port 3000')
+app.listen('4567', (req, res) => {
+    console.log('Server is running on port 4567')
 })
