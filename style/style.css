@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    background-image: url(../assets/bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#body-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    max-width: 25.3%;
+    border: 2px solid black;
+}
+
+#title-content-list {
+    position: relative;
+    width: 100%;
+    padding: 0.1% 0;
+    text-align: center;
+    background-color: black;
+}
+
+.title-text {
+    color: white;
+    white-space: nowrap;
+    font-size: clamp(1.28vw, 1vh, 1vw);
+    font-family: 'Russo One', sans-serif;
+}
+
+#main-content {
+    position: relative;
+    width: 56.6%;
+    margin: 0 auto;
+    line-height: 1.9;
+    list-style: square;
+    white-space: nowrap;
+    color: #ab5959;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+li {
+    font-size: clamp(0.98vw, 1vh, 1vw);
+}
