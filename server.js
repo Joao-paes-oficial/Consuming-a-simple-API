@@ -12,7 +12,6 @@ app.get('/', async (req, res) => {
     } catch (error) {
         console.error(error)
     }
-    
 })
 
 const door = 8000
