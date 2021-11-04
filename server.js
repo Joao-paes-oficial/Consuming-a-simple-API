@@ -1,16 +1,22 @@
 const cors = require('cors')
 const express = require('express')
+const axios = require('axios')
 const app = express()
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    return res.json([
-        {name: 'João'},
-        {name: 'Tobi'}
-    ])
+app.get('/', async (req, res) => {
+    try {
+        const { data } = await axios("https://jsonplaceholder.typicode.com/users")
+        return res.json(data)
+    } catch (error) {
+        console.error(error)
+    }
+    
 })
 
-app.listen('4567', (req, res) => {
-    console.log('Server is running on port 4567')
+const door = 8000
+
+app.listen(door, (req, res) => {
+    console.log(`Server is running on port ${door}`)
 })
